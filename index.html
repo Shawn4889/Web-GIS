@@ -1,0 +1,52 @@
+<div id='map'></div>
+
+<div id='menu'>
+  <label class='switch-container'>
+    Clusters
+    <input id='clusterLayers' type='radio' value="1" name='viz-toggle'>
+  </label>
+  <label class='switch-container'>
+    Heatmap
+    <input id='heatLayers' type='radio' value="2" name='viz-toggle'>
+  </label>
+  <label class='switch-container'>
+    Choropleth
+    <input id='choroplethLayers' type='radio' value="3" name='viz-toggle'>
+  </label>
+</div>  
+
+
+
+<div id='brush' class='ui-brush'></div>
+
+<link  href="https://unpkg.com/leaflet-geosearch@latest/assets/css/leaflet.css" rel="stylesheet" />
+<script src="https://unpkg.com/leaflet-geosearch@latest/dist/bundle.min.js"></script>
+
+
+
+
+<section class="section">
+
+  <div class="columns">
+    <div class="column is-6">
+      <div class="column is-6">
+        <h3 class="title is-3">
+          Crime events by date
+        </h3>
+        <ul id="displayed-list"></ul>
+        <canvas id="myGraph"></canvas>
+      </div>
+    </div>
+  </div>
+
+    <div class="column is-4">
+      <h3 class="title is-3">
+        Crime events by type
+      </h3>
+      <canvas id="myBarGraph"></canvas>
+    </div>
+
+
+    </section>
+
+  
